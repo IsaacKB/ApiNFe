@@ -1,14 +1,14 @@
 ﻿using System.Text;
-using pocApiSefaz.Repositories.Interfaces;
+using pocApiSefaz.Services.Interfaces;
 using RabbitMQ.Client;
 
-namespace pocApiSefaz.Repositories
+namespace pocApiSefaz.Services
 {
-    public class RabbitMQRepository : IRabbitMQRepository
+    public class RabbitMQService : IRabbitMQService
     {
         private ConnectionFactory factory { get; set; }
 
-        public RabbitMQRepository()
+        public RabbitMQService()
         {
             factory = new ConnectionFactory()
             {

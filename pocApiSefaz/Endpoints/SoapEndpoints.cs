@@ -11,7 +11,7 @@ namespace pocApiSefaz.Endpoints
         {
             app.MapGet("/", (ISoapService soapService) =>
             {
-                return soapService.GetAll();
+                return soapService.execute();
             });
         }
     }

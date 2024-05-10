@@ -12,6 +12,7 @@ namespace pocApiSefaz.Extensions
         {
             services.AddScoped<ITodoService, TodoService>();
             services.AddScoped<ISoapService, SoapService>();
+            services.AddScoped<IRabbitMQService, RabbitMQService>();
 
             return services;
         }
@@ -19,8 +20,6 @@ namespace pocApiSefaz.Extensions
         public static IServiceCollection AddRepositories(this IServiceCollection services)
         {
             services.AddScoped<ITodoRepository, TodoRepository>();
-            services.AddScoped<ISoapRepository, SoapRepository>();
-            services.AddScoped<IRabbitMQRepository, RabbitMQRepository>();
             services.AddScoped<Mapper>();
 
             return services;
