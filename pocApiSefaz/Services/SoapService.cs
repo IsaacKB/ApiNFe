@@ -19,8 +19,7 @@ namespace pocApiSefaz.Services
 
         public IResult GetAll()
         {
-            var todos = _soapRepository.execute();
-            return todos;
+            return _soapRepository.execute();
         }
     }
 }

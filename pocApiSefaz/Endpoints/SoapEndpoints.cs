@@ -7,14 +7,11 @@ namespace pocApiSefaz.Endpoints
     {
         public SoapEndpoints() : base("/soap") { }
 
-
         public override void AddRoutes(IEndpointRouteBuilder app)
         {
             app.MapGet("/", (ISoapService soapService) =>
             {
-                var todos = soapService.GetAll();
-
-                return TypedResults.Ok(todos);
+                return soapService.GetAll();
             });
         }
     }
