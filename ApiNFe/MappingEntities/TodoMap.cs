@@ -2,7 +2,7 @@
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using Models;
 
-namespace pocApiSefaz.MappingEntities
+namespace ApiNFe.MappingEntities
 {
     public class TodoMap : IEntityTypeConfiguration<Todo>
     {

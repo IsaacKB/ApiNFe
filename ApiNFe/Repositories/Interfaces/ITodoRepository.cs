@@ -1,11 +1,10 @@
 ﻿using Models;
-using pocApiSefaz.DTOs;
 
-namespace pocApiSefaz.Services.Interfaces
+namespace ApiNFe.Repositories.Interfaces
 {
-    public interface ITodoService
+    public interface ITodoRepository
     {
-        Task<IEnumerable<TodoDTO>> GetAll();
+        Task<List<Todo>> GetAll();
 
         Task Add(Todo todo);
 

@@ -1,10 +1,10 @@
-﻿using pocApiSefaz.Repositories.Interfaces;
-using pocApiSefaz.Repositories;
-using pocApiSefaz.Services.Interfaces;
-using pocApiSefaz.Services;
+﻿using ApiNFe.Repositories.Interfaces;
+using ApiNFe.Repositories;
+using ApiNFe.Services.Interfaces;
+using ApiNFe.Services;
 using AutoMapper;
 
-namespace pocApiSefaz.Extensions
+namespace ApiNFe.Extensions
 {
     public static class DependencyInjection
     {

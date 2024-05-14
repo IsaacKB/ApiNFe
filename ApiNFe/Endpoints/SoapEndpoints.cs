@@ -1,7 +1,7 @@
 ﻿using Carter;
-using pocApiSefaz.Services.Interfaces;
+using ApiNFe.Services.Interfaces;
 
-namespace pocApiSefaz.Endpoints
+namespace ApiNFe.Endpoints
 {
     public class SoapEndpoints : CarterModule
     {

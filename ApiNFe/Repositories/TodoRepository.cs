@@ -1,10 +1,10 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Models;
-using pocApiSefaz.Context;
-using pocApiSefaz.Repositories.Interfaces;
+using ApiNFe.Context;
+using ApiNFe.Repositories.Interfaces;
 
 
-namespace pocApiSefaz.Repositories
+namespace ApiNFe.Repositories
 {
     public class TodoRepository : ITodoRepository
     {

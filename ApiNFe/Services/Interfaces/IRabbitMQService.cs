@@ -1,6 +1,6 @@
 ﻿using Models;
 
-namespace pocApiSefaz.Services.Interfaces
+namespace ApiNFe.Services.Interfaces
 {
     public interface IRabbitMQService
     {

@@ -1,14 +1,17 @@
 ﻿using Carter;
 using Microsoft.EntityFrameworkCore;
-using pocApiSefaz.Context;
+using ApiNFe.Context;
 
-namespace pocApiSefaz.Extensions
+namespace ApiNFe.Extensions
 {
     public static class Configuration
     {
         public static void RegisterServices(this WebApplicationBuilder builder)
         {
-            builder.Services.AddDbContext<AppDbContext>(opt => opt.UseInMemoryDatabase("DbTest"));
+            var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
+            builder.Services.AddDbContext<AppDbContext>(options => 
+                options.UseNpgsql(connectionString)
+            );
             builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 
             builder.Services.AddRepositories();

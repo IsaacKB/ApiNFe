@@ -1,7 +1,7 @@
 ﻿using Models;
-using pocApiSefaz.DTOs;
+using ApiNFe.DTOs;
 
-namespace pocApiSefaz.Services.Interfaces
+namespace ApiNFe.Services.Interfaces
 {
     public interface ISoapService
     {

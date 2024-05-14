@@ -1,4 +1,4 @@
-using pocApiSefaz.Extensions;
+using ApiNFe.Extensions;
 
 var builder = WebApplication.CreateBuilder(args);
 

@@ -1,10 +1,10 @@
-﻿using pocApiSefaz.Services.Interfaces;
+﻿using ApiNFe.Services.Interfaces;
 using AutoMapper;
 using System.Net;
 using System.Security.Cryptography.X509Certificates;
 using System.Xml;
 
-namespace pocApiSefaz.Services
+namespace ApiNFe.Services
 {
     public class SoapService : ISoapService
     {

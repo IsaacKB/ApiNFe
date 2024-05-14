@@ -1,8 +1,8 @@
 ﻿using System.Text;
-using pocApiSefaz.Services.Interfaces;
+using ApiNFe.Services.Interfaces;
 using RabbitMQ.Client;
 
-namespace pocApiSefaz.Services
+namespace ApiNFe.Services
 {
     public class RabbitMQService : IRabbitMQService
     {

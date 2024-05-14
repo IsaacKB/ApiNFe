@@ -9,17 +9,17 @@ EXPOSE 8081
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 ARG BUILD_CONFIGURATION=Release
 WORKDIR /src
-COPY ["pocApiSefaz/pocApiSefaz.csproj", "pocApiSefaz/"]
-RUN dotnet restore "./pocApiSefaz/pocApiSefaz.csproj"
+COPY ["ApiNFe/ApiNFe.csproj", "ApiNFe/"]
+RUN dotnet restore "./ApiNFe/ApiNFe.csproj"
 COPY . .
-WORKDIR "/src/pocApiSefaz"
-RUN dotnet build "./pocApiSefaz.csproj" -c $BUILD_CONFIGURATION -o /app/build
+WORKDIR "/src/ApiNFe"
+RUN dotnet build "./ApiNFe.csproj" -c $BUILD_CONFIGURATION -o /app/build
 
 FROM build AS publish
 ARG BUILD_CONFIGURATION=Release
-RUN dotnet publish "./pocApiSefaz.csproj" -c $BUILD_CONFIGURATION -o /app/publish /p:UseAppHost=false
+RUN dotnet publish "./ApiNFe.csproj" -c $BUILD_CONFIGURATION -o /app/publish /p:UseAppHost=false
 
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
-ENTRYPOINT ["dotnet", "pocApiSefaz.dll"]
+ENTRYPOINT ["dotnet", "ApiNFe.dll"]

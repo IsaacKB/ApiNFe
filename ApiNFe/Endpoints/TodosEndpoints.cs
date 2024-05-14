@@ -1,9 +1,9 @@
 ﻿using Carter;
 using Models;
-using pocApiSefaz.DTOs;
-using pocApiSefaz.Services.Interfaces;
+using ApiNFe.DTOs;
+using ApiNFe.Services.Interfaces;
 
-namespace pocApiSefaz.Endpoints
+namespace ApiNFe.Endpoints
 {
     public class TodosEndpoints : CarterModule
     {

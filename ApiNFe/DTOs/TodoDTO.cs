@@ -1,6 +1,6 @@
 ﻿using Models;
 
-namespace pocApiSefaz.DTOs
+namespace ApiNFe.DTOs
 {
     public class TodoDTO
     {

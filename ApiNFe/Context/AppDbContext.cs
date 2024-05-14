@@ -1,8 +1,8 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Models;
-using pocApiSefaz.MappingEntities;
+using ApiNFe.MappingEntities;
 
-namespace pocApiSefaz.Context
+namespace ApiNFe.Context
 {
     public class AppDbContext : DbContext
     {

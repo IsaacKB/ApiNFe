@@ -1,10 +1,10 @@
 ﻿using Models;
-using pocApiSefaz.Repositories.Interfaces;
-using pocApiSefaz.Services.Interfaces;
-using pocApiSefaz.DTOs;
+using ApiNFe.Repositories.Interfaces;
+using ApiNFe.Services.Interfaces;
+using ApiNFe.DTOs;
 using AutoMapper;
 
-namespace pocApiSefaz.Services
+namespace ApiNFe.Services
 {
     public class TodoService : ITodoService
     {
